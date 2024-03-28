@@ -1,16 +1,19 @@
-const Img=document.querySelector("img")
+
+var Img=document.querySelector("img")
+const Input=document.querySelector("input")
+
 
 
 
 
 Img.addEventListener("click",()=>{
-    console.log(Img)
-      if(Img.type=="password"){
-        Img.type="text"
-        Img.scr="/eye-open.png"
+   // console.log(Img.type)
+      if(Input.type=="password"){
+        Input.type="text"
+        Img.src="/eye-open.png"
       }
       else{
-        Img.type="password"
-        Img.scr="/eye-close.png"
+        Input.type="password"
+        Img.src="/eye-close.png"
       }
 })
